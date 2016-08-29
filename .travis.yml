@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 0.12.7
+services:
+- redis-server
+script:
+- make -f .travis test
+addons:
+  hosts:
+  - api.localhost
+  - api.localhost.io
+  - localhost.io
+notifications:
+  slack:
+    secure: W/N1Y2taTvg0ORQCrFowtuIL6i06YYKPSi4EB/KgLvxIG2WXHWDnWjHyQeUKAoE4H/cCGsqIxrn9QKAx0ax0jgj40n44MG9Eqqeq+MglR8Vwo305wDs5bzsHpaOooOpjv3qZLKZhN/mcQm8NpXDu5C3thNwtjBxh1RbgkxNGW6U=
+  webhooks: https://api.integrator.io/v1/exports/55ed3cc386de45f94413d3e0/data
