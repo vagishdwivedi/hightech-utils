@@ -2,7 +2,7 @@
 var request = require('request')
   , _ = require('lodash')
   , async = require('async')
-  , findWhere = require('lodash.findwhere')
+  , findWhere = require('lodash.findwhere') 
 
 var HERCULES_BASE_URL = 'http://api.localhost.io:5000'
 
